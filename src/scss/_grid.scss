@@ -37,16 +37,23 @@ gap: $gapV $gapH;
         @for $i from 1 through 12 {
         
         .col#{$label}-#{$i} {
-        
-        grid-column: span + ' ' + #{$i};
+             grid-column: span + ' ' + #{$i};
         
         }
         
         .row#{$label}-#{$i} {
-        
-        grid-row: span + ' ' + #{$i};
+            grid-row: span + ' ' + #{$i};
         
         }
+         @for $j from 0 through 11 {
+             
+         
+            .offset#{$label}-#{$j}.col#{$label}-#{$i} {
+                grid-column: #{$j+1} / span + ' ' + #{$i}; 
+            } 
+        }
+               
+        }     
         
         }
         
@@ -54,5 +61,5 @@ gap: $gapV $gapH;
         
         }
 
-}
+
 

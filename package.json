@@ -17,10 +17,10 @@
     "url": "https://github.com/GoezDavid/WDWD/issues"
   },
   "homepage": "https://github.com/GoezDavid/WDWD#readme",
-  "dependencies": {
-    "parcel-bundler": "^1.12.5"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-purgecss": "^3.0.0",
     "sass": "^1.32.11"
   },
   "description": ""
