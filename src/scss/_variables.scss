@@ -1,8 +1,16 @@
 $gridValues: (
     ('', 0, auto),
     ('-sm', 576px, 540px),
-    ('-m', 768px, 720px),
-    ('-l', 992px, 960px),
+    ('-md', 768px, 720px),
+    ('-lg', 992px, 960px),
     ('-xl', 1200px, 1140px),
     ('-xxl', 1400px, 1320px)
 );
+// Typos
+$fontPrimary: "futura";
+$fontSecondary: "aller";
+
+// Colors
+$colorHot: #ff2254;
+$colorLight: #eeeddc;
+$colorDark: #444;

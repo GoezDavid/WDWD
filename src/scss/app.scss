@@ -1,26 +1,141 @@
 @import './../lib/fontawesome/all.min.css';
 @import './variables';
 @import './grid';
-
+@import './fonts';
 
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontSecondary;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fontPrimary;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: $colorDark;
+    &:hover {
+        color: $colorHot;
+    }
+}
+hr {
+    width: 50%;
+}
+// ||||||||||| HELPERS ||||||||||||
+.backgroundLight {
+    background: $colorLight;
+}
+.backgroundHot {
+    background: $colorHot;
+}
+.backgroundDark {
+    background: $colorDark;
+}
+.backgroundTeam {
+    background: center/cover url('./../img/team.jpg');
+}
+.txtHot {
+    color: $colorHot;
+}
+.txtDark {
+    color: $colorDark;
+}
+.txtLight {
+    color: $colorLight;
+}
+.isActive {
+    background: $colorHot;
+    color: $colorLight;
+    &:hover {
+        background: $colorDark;
+        color: $colorLight;
 
-//-----------HEADER------------------
-.o-siteHeader{
+    }
+}
+.dBlock {
+    display: block;
+}
+.dNone {
+    display: none;
+}
+// ||||||||||| HEADER |||||||||||||
+.o-siteHeader {
+    text-align: center;
+    padding-top: 2rem;
     &__m-logosContainer {
-        &__link{
-            &__a-logo{
-color: aqua;
+        &__link {
+            &__a-logo {
+                max-height: 100px;
             }
         }
     }
-    &m-mainNav{
+    &__m-mainNav {
         &__menuList {
-            &__a-item{
-                &__link{
-color: aqua;
+            &__a-item {
+                @media screen and (min-width: 768px) {
+                    display: inline-block;
+                }
+                &__link {
+                    display: block;
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+}
+// ||||||||| HERO |||||||||||||
+.o-hero {
+    text-align: center;
+    color: $colorLight;
+    padding-top: 2rem;
+    &__a-title1 {
+        &::first-line {
+            color: $colorHot;
+            font-size: 3rem;
+        }
+    }
+    &__a-title2 {
+        margin: 2rem 0;
+        font-size: 1rem;
+        font-family: $fontSecondary;
+    }
+    &__a-title3 {
+    }
+    &__a-title4 {
+    }
+    &__m-card {
+        padding: 2rem 1rem;
+        &.backgroundHot {
+            a:hover {
+                color: $colorDark;
+            }
+        }
+        &__cardLink {
+            &__a-icon {
+                font-size: 4rem;
+            }
+            &__a-title {
+                margin: 2rem 0;
+                font-size: 1.2rem;
+            }
+            &__list {
+                &__a-listItem {
+
                 }
             }
         }
