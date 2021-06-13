@@ -1,4 +1,8 @@
-@import './../lib/fontawesome/all.min.css';
+// @import './../lib/fontawesome/all.min.css';
+@import "./../lib/fontawesome/scss/fontawesome.scss";
+@import './../lib/fontawesome/scss/solid.scss';
+@import './../lib/fontawesome/scss/brands.scss';
+@import './../lib/fontawesome/scss/regular.scss';
 @import './variables';
 @import './grid';
 @import './fonts';
@@ -32,9 +36,6 @@ a {
     &:hover {
         color: $colorHot;
     }
-}
-hr {
-    width: 50%;
 }
 // ||||||||||| HELPERS ||||||||||||
 .backgroundLight {
@@ -73,71 +74,211 @@ hr {
 .dNone {
     display: none;
 }
-// ||||||||||| HEADER |||||||||||||
-.o-siteHeader {
+.lineSeparator {
+    border-bottom: 1px solid;
+    width: 30%;
+    margin: auto;
+}
+
+.text-center {
     text-align: center;
-    padding-top: 2rem;
-    &__m-logosContainer {
-        &__link {
-            &__a-logo {
-                max-height: 100px;
-            }
+}
+// |||||||| Menu HAMBURGER |||||||||
+#hamburgerLabel {
+    display: block;
+    font-size: 4rem;
+    text-align: center;
+}
+#hamburgerLabel::before {
+        content: '\f0c9';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        @media screen and (min-width: 768px) {
+            display: none;
         }
     }
-    &__m-mainNav {
-        &__menuList {
-            &__a-item {
+    #hamburgerLabel:hover {
+        cursor: pointer;
+        
+    }
+   
+
+#hamburgerCheckbox {
+    display: none;
+}
+#hamburgerCheckbox:checked {
+        ~ nav {
+            display: block;
+        }
+         #hamburgerLabel::before {
+            content:'\f00d';
+        }
+    } 
+
+// ||||||||||| HEADER |||||||||||||
+#siteHeader {
+    text-align: center;
+    padding-top: 2rem;
+}
+    
+   .logo {
+                max-width: 100%;
+                max-height: 100px;
+            }
+        
+    
+    .mainNav {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            text-align: center;
+        }
+    }
+        
+            .navitem {
                 @media screen and (min-width: 768px) {
                     display: inline-block;
                 }
-                &__link {
+            }
+                .navlink {
                     display: block;
                     padding: 2rem;
                 }
-            }
-        }
-    }
-}
+            
+        
+    
+
 // ||||||||| HERO |||||||||||||
-.o-hero {
+.hero {
     text-align: center;
     color: $colorLight;
     padding-top: 2rem;
-    &__a-title1 {
-        &::first-line {
+}
+    .title1 {
+        .title1::first-line {
             color: $colorHot;
             font-size: 3rem;
         }
     }
-    &__a-title2 {
+    .title2 {
         margin: 2rem 0;
         font-size: 1rem;
         font-family: $fontSecondary;
     }
-    &__a-title3 {
-    }
-    &__a-title4 {
-    }
-    &__m-card {
-        padding: 2rem 1rem;
-        &.backgroundHot {
+   
+    .card {
+        .card.backgroundHot {
             a:hover {
                 color: $colorDark;
             }
         }
-        &__cardLink {
-            &__a-icon {
+    }
+        .cardLink {
+            padding: 2rem 1rem;
+            display: block;
+        }
+            .icon {
                 font-size: 4rem;
             }
-            &__a-title {
+            
+            .title {
                 margin: 2rem 0;
                 font-size: 1.2rem;
             }
-            &__list {
-                &__a-listItem {
+          
+        
+// |||||||||| Main Content ||||||||||||
+.mainContent {
+    padding: 2rem 1rem;
+}
+    .title1 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .title2 {
+        margin: 2rem 0;
+    }
+    .title3 {
+        margin: 2rem 0;
+    }
+   
+    .additionalContent {
+        padding: 1rem;
+       
+    }
 
+
+// |||||||||| Main Address ||||||||||
+.mainAddress {
+     padding: 0;
+}
+    .googleMap {
+        width: 100%;
+    }
+
+
+// |||||||||| Main Summary ||||||||||||
+.mainSummary {
+    padding-bottom: 2rem;
+}
+    .title3 {
+        text-align: center;
+        margin: 2rem 0 1rem;
+    }
+    .title4 {
+        text-align: center;
+        font-family: $fontSecondary;
+    }
+    
+        
+        .menuList {
+            list-style: square;
+            padding-left: 1rem;
+        }
+            
+                .mainlink {
+                    color: $colorLight;
+                    text-decoration: underline;
                 }
+                
+                    
+                        
+                
+            
+        
+    
+
+
+
+
+// |||||||||| FOOTER |||||||||||
+.siteFooter {
+    text-align: center;
+    padding: 2rem 0;
+    }
+    
+        .footerlink {
+            .footerlink:hover {
+                color: $colorDark;
+            }
+            .footericon {
+                .footericon:hover {
+                    color: $colorHot;
+                }
+                font-size: 5rem;
+                margin-top: 1rem;
             }
         }
-    }
-}
+    
+    .menuList > li {
+            display: block;
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+            }
+        }
+            .menuList > li > a {
+                padding: 1rem;
+                display: block;
+            }
+        
+    

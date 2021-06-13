@@ -11,30 +11,32 @@
 
 <body>
     <div class="backgroundLight">
-        <header class="o-siteHeader container grid">
-            <div class="o-siteHeader__m-logosContainer">
-                <a href="#" class="o-siteHeader__m-logosContainer__link">
+        <header class="container grid" id="#siteHeader">
+            <div>
+                <a href="./index.html">
                     <img src="./img/logo-ieps2.svg"
                         alt="Logo de l'école de promotion-sociale de Fléron, une école de la fédération Wallonie-Bruxelles."
                         title="Logo de l'école de promotion-sociale de Fléron, une école de la fédération Wallonie-Bruxelles."
-                        class="o-siteHeader__m-logosContainer__link__a-logo" />
+                        class="logo" />
                 </a>
-                <a href="#" class="o-siteHeader__m-logosContainer__link">
+                <a href="#">
                     <img src="./img/logo-fwb.png" alt="Logo de la fédération Wallonie-Bruxelles."
                         title="Logo de la fédération Wallonie-Bruxelles."
-                        class="o-siteHeader__m-logosContainer__link__a-logo" />
+                        class="logo" />
                 </a>
             </div>
-            <nav class="o-siteHeader__m-mainNav">
-                <ul class="o-siteHeader__m-mainNav__menuList">
-                    <li class="o-siteHeader__m-mainNav__menuList__a-item">
-                        <a href="#" class="o-siteHeader__m-mainNav__menuList__a-item__link isActive">                          Accueil</a>
+            <input type="checkbox" id="hamburgerCheckbox" />
+            <label for="hamburgerCheckbox" id="hamburgerLabel"></label>
+            <nav class="mainNav">
+                <ul>
+                    <li class="navitem">
+                        <a href="./index.html" class="navlink isActive">Accueil</a>
                     </li>
-                    <li class="o-siteHeader__m-mainNav__menuList__a-item">
-                        <a href="#" class="o-siteHeader__m-mainNav__menuList__a-item__link">Foire aux questions</a>
+                    <li class="navitem">
+                        <a href="./faq.html" class="navlink">Foire aux questions</a>
                     </li>
-                    <li class="o-siteHeader__m-mainNav__menuList__a-item">
-                        <a href="http://www.promotion-sociale.be" class="o-siteHeader__m-mainNav__menuList__a-item__link" target="_blank">Site officiel IEPS</a>
+                    <li class="navitem">
+                        <a href="http://www.promotion-sociale.be" class="navlink" target="_blank">Site officiel IEPS</a>
                     </li>
                 </ul>
             </nav>
@@ -42,55 +44,55 @@
     </div>
     <main>
         <div class="backgroundTeam">
-            <header class="o-hero container grid">
-                <h1 class="o-hero__a-title1">Formation<span class="dBlock">Web Developer</span><span class="dBlock">Web Designer</span><span class="dNone">à l'école de promotion sociale IEPS de Fléron.</span></h1>
-                <h2 class="o-hero__a-title2">Les 1ers diplômes (BES) de<span class="dBlock">Web Developer & Web Designer</span></h2>
-                <h3 class="o-hero__a-title3">Informations pratiques</h3>
-                <h4 class="o-hero__a-title4">Déroulement de la formation</h4>
-                <hr />
-                <div class="o-hero__m-card backgroundHot">
-                    <a href="#" class="o-hero__m-card__cardLink txtLight">
-                        <i class="far fa-calendar o-hero__m-card__cardLink__a-icon"></i>
-                        <h5 class="o-hero__m-card__cardLink__a-title">
+            <header class="hero container grid">
+                <h1 class="title1">Formation<span class="dBlock">Web Developer</span><span class="dBlock">Web Designer</span><span class="dNone">à l'école de promotion sociale IEPS de Fléron.</span></h1>
+                <h2 class="title2">Les 1ers diplômes (BES) de<span class="dBlock">Web Developer & Web Designer</span></h2>
+                <h3 class="title3">Informations pratiques</h3>
+                <h4 class="title4">Déroulement de la formation</h4>
+                <div class="lineSeparator txtLight"></div>
+                <div class="card backgroundHot col-md-4">
+                    <a href="#" class="cardLink txtLight">
+                        <i class="far fa-calendar icon dBlock"></i>
+                        <h5 class="title">
                             Organisation des cours
                         </h5>
-                        <ul class="o-hero__m-card__cardLink__list">
-                            <li class="o-hero__m-card__cardLink__list__a-listItem">
+                        <ul class="list">
+                            <li class="listItem">
                                 Formation en 2 ans
                             </li>
-                            <li class="o-hero__m-card__cardLink__list__a-listItem">
+                            <li class="listItem">
                                 4 journées / semaine
                             </li>
                         </ul>
                     </a>
                 </div>
-                <div class="o-hero__m-card backgroundDark">
-                    <a href="#" class="o-hero__m-card__cardLink txtLight">
-                        <i class="far fa-clock o-hero__m-card__cardLink__a-icon"></i>
-                        <h5 class="o-hero__m-card__cardLink__a-title">
+                <div class="card backgroundDark col-md-4">
+                    <a href="#" class="cardLink txtLight">
+                        <i class="far fa-clock icon dBlock"></i>
+                        <h5 class="title">
                             Horaires des cours
                         </h5>
-                        <ul class="o-hero__m-card__cardLink__list">
-                            <li class="o-hero__m-card__cardLink__list__a-listItem">
+                        <ul class="list">
+                            <li class="listItem">
                                 4 journées / semaine
                             </li>
-                            <li class="o-hero__m-card__cardLink__list__a-listItem">
+                            <li class="listItem">
                                 de 8h30 à 16h00
                             </li>
                         </ul>
                     </a>
                 </div>
-                <div class="o-hero__m-card backgroundLight">
-                    <a href="#" class="o-hero__m-card__cardLink">
-                        <i class="far fa-file-alt o-hero__m-card__cardLink__a-icon"></i>
-                        <h5 class="o-hero__m-card__cardLink__a-title">
+                <div class="card backgroundLight col-md-4">
+                    <a href="#" class="cardLink">
+                        <i class="far fa-file-alt icon dBlock"></i>
+                        <h5 class="title">
                             Diplôme délivré
                         </h5>
-                        <ul class="o-hero__m-card__cardLink__list">
-                            <li class="o-hero__m-card__cardLink__list__a-listItem">
+                        <ul class="list">
+                            <li class="listItem">
                                 BES Web developer
                             </li>
-                            <li class="o-hero__m-card__cardLink__list__a-listItem">
+                            <li class="listItem">
                                 BES Web Designer
                             </li>
                         </ul>
@@ -98,7 +100,115 @@
                 </div>
             </header>
         </div>
+        <div class="backgroundDark txtLight">
+            <article class="container">
+                <h2 class="title1">La formation en bref</h2>
+                <div class="lineSeparator txtLight"></div>
+
+                <h3 class="title2">Une formation solide en 1 an et un diplôme supérieur en 2 ans !</h3>
+                <h4 class="title3">Une première année pour réaliser des sites web dynamiques et ergonomiques.</h4>
+                <p class="textContent">Au terme de cette première année, vous avez acquis les compétences nécessaires pour réaliser des sites web dynamiques et ergonomiques professionnels.</p>
+                <p class="textContent">Vous pouvez déjà valoriser ces compétences auprès d’un employeur ou vous lancer sur votre propre chemin, sans plus attendre.</p>
+                <p class="textContent">HTML5 sémantique, CSS, référencement naturel, JQUERY, PHP/MySQL, SQL, traitement d’images, Responsive Design, ...</p>
+
+                <h4 class="o-mainContent__a-title3">Une seconde année d'approfondissements métiers ... Et un diplôme supérieur à la clé !</h4>
+                <p class="o-mainContent__a-textContent">Au terme de cette seconde année, vous êtes détenteur d’un véritable diplôme supérieur à portée européenne et de compétences répondant aux attentes du marché de l’emploi.</p>
+                <p class="o-mainContent__a-textContent">Vous avez eu la possibilité de réaliser un stage en entreprise et vous avez l’expérience de la réalisation de nombreux projets réels. Votre CV pourrait dès lors s’en trouver considérablement upgradé !</p>
+                <p class="o-mainContent__a-textContent">POO, FRAMEWORKS PHP, JQUERY, JQUERY Mobile, AJAX, XML, XSLt, CSS3, WEB 2.0, Rich media, FRAMWORKS CSS, E-commerce, Responsive Design, Pré-processeurs CSS (SASS, LESS)...</p>
+
+                <h3 class="title2">Un stage en entreprise</h3>
+                <p class="textContent">La seconde année comprend un stage en entreprise de 240 périodes. Ce délai est suffisamment ample pour vous permettre de vous intégrer dans une équipe et de mener à son terme un projet.</p>
+                <p class="textContent">Il s’agit là d’une expérience irremplaçable et les perspectives d’emploi sont démultipliées lorsque l’on a eu l’occasion de montrer ses compétences et sa motivation.</p>
+
+                <h3 class="title2">Un TFE</h3>
+                <p class="textContent">Afin d’obtenir votre B.E.S., vous serez amené à réaliser un travail personnel. Ce travail consiste en un site pour une ASBL, une entreprise, ou autre projet pour un tiers, et d’un rapport écrit présentant votre réalisation.</p>
+                <p class="textContent">Vous présenterez votre travail devant un jury constitué de vos professeurs ainsi que de membres extérieurs issus du milieu professionnel.</p>
+                <p class="textContent">Vous avez ainsi la possibilité de réaliser un projet réel et de montrer vos compétences à un public professionnel. En plus d’enrichir votre CV, il s’agit d’une opportunité de vous confronter à un avis d’expert et de faire preuve de vos nouveaux savoir-faire.</p>
+
+                <h3 class="title2">Un diplôme supérieur</h3>
+                <p class="textContent">Le B.E.S. ou Brevet d’Enseignement Supérieur est un diplôme officiel de niveau supérieur (BAC+2) reconnu au niveau européen, à l’instar du titre de bachelier.</p>
+                <p class="textContent">Les formations qui mènent à un B.E.S. proposent des formations à haut potentiel d’emploi et d’insertion, notamment dans les métiers de l’informatique, etc.</p>
+                <p class="textContent">En poursuivant une formation complémentaire de 60 crédits, l’étudiant peut obtenir le grade de bachelier.” (Site du Gouvernement de la Communauté française)</p>
+                <h3 class="title2">Des outils pédagogiques de pointe</h3>
+                <p class="textContent">En plus d’être articulées autour d’outils pédagogiques en ligne, les formations bénéficient d’outils de pointe en matière de connectique, de communication et de pédagogie, comme une connexion WIFI, de nombreux postes de travail, un tableau interactif de toute dernière génération.</p>
+                <p class="textContent">Ces outils permettent un abord pédagogique neuf et un suivi de sa progression par chacun des étudiants. Il lui est alors possible de s’approprier de nouvelles compétences et s’ouvrir à de nouveaux horizons.</p>
+                <aside class="additionalContent backgroundHot txtLight">
+                    <h2 class="title1">Conditions d'accès</h2>
+                    <p class="textContent">N’est requis que le CESS (certificat d’enseignement secondaire supérieur). Mais un petit test est organisé pour ceux qui n’en seraient pas détenteurs.</p>
+                    <p class="textContent">Au niveau informatique, ne sont requises que quelques notions de base de l’utilisation d’un ordinateur : navigation sur internet, utilisation d’un mail, création de fichiers et de dossiers, ... un peu de logique et une bonne dose de motivation.</p>
+                </aside>
+            </article>
+            <address class="mainAddress container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.856655132707!2d5.680495615394361!3d50.61120108365036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f41c3d702da7%3A0x2d5b3cb7b45da7ab!2sIEPS%20Fl%C3%A9ron!5e0!3m2!1sfr!2sbe!4v1621243044911!5m2!1sfr!2sbe"  height="450" style="border:0;" loading="lazy" class="googleMap"></iframe>
+            </address>
+            <footer class="mainSummary container grid">
+                <h2 class="title1">La formation en bref</h2>
+                <h3 class="title2">Récapitulatif des renseignements dont vous avez besoin.</h3>
+                <div class="lineSeparator"></div>
+                <div class="col-md-3">
+                    <h4 class="title3">Détails</h4>
+                    <ul class="menuList">
+                        <li class="listItem">Formation en 2 ans</li>
+                        <li class="listItem">Cours donnés en journée à raison de 20h par semaine</li>
+                        <li class="listItem">Finalité : diplôme de type BES</li>
+                        <li class="listItem">Montant de l’inscription : 100€</li>
+                    </ul class="menuList">
+                </div>
+                <div class="col-md-3">
+                    <h4 class="title3">Séance d'information & conditions d'admission</h4>
+                    <ul class="menuList">
+                        <li class="listItem">Une séance d’information est prévue le 12/09/2020 à 17h00 à Fléron.</li>
+                        <li class="listItem">Cette formation ne demande aucun pré-requis.</li>
+                        <li class="listItem">Si vous ne disposez pas du CESS, un test d’admission est prévu le 12/09/2019 à 22:00, à Fléron.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="title3">Horaires et organigramme des cours</h4>
+                    <ul class="menuList">
+                        <li class="listItem"><a href="./documents/horaire.pdf" target="_blank" class="mainlink">Horaire 2020 - 2021</a></li>
+                        <li class="o-mainSummary__m-overview__menuList__a-listItem"><a href="./documents/organigramme.pdf" target="_blank" class="mainlink">Organigramme des cours</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h4 class="title3">Personne(s) de contact</h4>
+                    <ul class="menuList">
+                        <li class="listItem">Pascal Lacroix
+                            <ul>
+                                <li><a href="tel:0032494444444" class="mainlink">0494/44.44.44</a></li>
+                                <li><a href="mailto:p.lacroix@gmail.com" class="mainlink">p.lacroix@gmail.com</a></li>
+                            </ul>
+                        </li>
+                        <li class="listItem">Julien Costenaro
+                            <ul>
+                                <li><a href="tel:0032475333333" class="mainlink">0475/33.33.33</a></li>
+                                <li><a href="mailto:juliencostenaro@gmail.com" class="mainlink">juliencostenaro@gmail.com</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </main>
+    <footer class="siteFooter backgroundLight">
+        <h2 class="title1">
+            <a href="#" class="footerlink">
+                Retrouvez l'IEPS de Fléron sur Facebook
+                <i class="fab fa-facebook-square footericon dBlock"></i>
+            </a>
+        </h2>
+        <hr class="dNone" />
+        <ul class="menuList">
+            <li class="listItem">
+                <a href="#" class="footerlink">Accueil</a>
+            </li>
+            <li class="listItem">
+                <a href="#" class="footerlink">Foire aux questions</a>
+            </li>
+            <li class="listItem">
+                <a href="#" class="footerlink">Site officiel IEPS Fléron</a>
+            </li>
+        </ul>
+    </footer>
     <script src="./index.js"></script>
 </body>
 
